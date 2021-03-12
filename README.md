@@ -1,3 +1,4 @@
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Usage
 
 Creates an AWS WAF Regional Web ACL for use with AWS API Gateway REST API.  This is a regional resource, so you must create the WAF in the same region as your API Gateway.
@@ -38,14 +39,26 @@ This project constitutes a work of the United States Government and is not subje
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
-| aws | >= 2.55.0 |
+| terraform | >= 0.13 |
+| aws | ~> 3.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 2.55.0 |
+| aws | ~> 3.0 |
+
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_wafregional_byte_match_set](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_byte_match_set) |
+| [aws_wafregional_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_rule) |
+| [aws_wafregional_web_acl](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_web_acl) |
 
 ## Inputs
 
@@ -64,4 +77,4 @@ This project constitutes a work of the United States Government and is not subje
 | Name | Description |
 |------|-------------|
 | web\_acl\_id | The ID of the WAF WebACL. |
-
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
